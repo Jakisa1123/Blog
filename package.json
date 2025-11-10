@@ -1,0 +1,6 @@
+{
+  "name": "statidocs",
+  "scripts": {
+    "build": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
+  }
+}

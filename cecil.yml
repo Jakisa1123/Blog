@@ -1,0 +1,63 @@
+# Statidocs default config
+title: DieumeBlogue
+baseline: Mon espace pour partager des nouvelles et infos
+baseurl: /
+author:
+  name: DieumeBlogue
+  url: https://arnaudligny.fr
+image: og-card.png
+
+menus:
+  main:
+    - id: index
+      name: Accueil
+      url: /
+      weight: 0
+    - id: nouvelles
+      name: Nouvelles
+      url: /nouvelles/
+      weight: 1
+    - id: about
+      name: A propos
+      url: /about/
+      weight: 2 
+    - id: contact
+      name: Contact
+      url: /contact/
+      weight: 3
+
+footer: © DieumeBlogue 2025. All rights reserved. <br>
+        Dieumercei Jakisa
+
+docsearch:
+  enabled: false
+  # statidocs.cecil.app credentials
+  appId: F5QE72IRAL
+  indexName: staticecil
+  apiKey: b165b7766201deabe0be660ca0bdab94
+  insights: true
+
+# Cecil config for Statidocs
+theme:
+  - docs
+  - pwa
+  - redirects
+  - headers
+metatags:
+  jsonld: true
+manifest:
+  #background_color: '#1447E6'
+  #theme_color: '#1447E6'
+  #theme_color_dark: '#1C398E'
+  #icons:
+  #  - icon-192x192.png
+  #  - icon-512x512.png
+  #  - src: icon-192x192-maskable.png
+  #    purpose: maskable
+  #  - src: icon-512x512-maskable.png
+  #    purpose: maskable
+  shortcuts: true
+serviceworker:
+  enabled: false
+  update:
+    snackbar: true
